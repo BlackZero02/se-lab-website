@@ -1,0 +1,124 @@
+
+		/* Navbar styles */
+        .navbar {
+            background-color: #fff;
+            position: relative;
+            z-index: 100;
+            padding: 0;
+        }
+        
+        .navbar-brand img {
+            height: 100px;
+            padding: 15px 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+        
+        .navbar-nav {
+            margin-left: auto;
+        }
+        
+        .nav-item {
+            position: relative;
+            padding-right: 40px;
+        }
+        
+        .nav-link {
+            color: #333;
+            font-weight: bold;
+            padding: 20px 30px;
+            display: inline-block;
+        }
+        
+        .nav-link:hover:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 3px;
+            background-color: #f0eded;
+            animation: line-anim 0.3s forwards;
+        }
+        
+        @keyframes line-anim {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        /* Footer styles */
+        .footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .footer a {
+            color: #fff;
+        }
+        
+        .footer a:hover {
+            color: #ccc;
+        }
+        /* Logo styles */
+        .logo {
+          height: 40px;
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+        }
+        
+        .logo::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: -10px;
+          height: 100%;
+          width: 1px;
+          background-color: #fff;
+        }
+        
+        .logo-text {
+          font-size: 24px;
+          font-weight: bold;
+          color: #fff;
+          display: inline-block;
+          vertical-align: middle;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        
+        /* Animate logo text on hover */
+        .navbar-brand:hover .logo-text {
+          opacity: 1;
+        }
+        
+        
+        
+     
+          .hero {
+      background-image: url("images/seller.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      padding: 285px 0; /* adjust the padding according to your image size */
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 1em;
+    }
+
+    .hero .btn {
+      font-size: 1.5em;
+      margin-right: 1em;
+    }
+        
+        
